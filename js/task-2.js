@@ -1,4 +1,6 @@
-function getUsersWithFriend(allUsersArray, userName) {}
+function getUsersWithFriend(allUsersArray, userName) {
+  return allUsersArray.filter((user) => user.friends.includes(userName));
+}
 
 console.log("");
 console.log("----------Друге завдання----------");
