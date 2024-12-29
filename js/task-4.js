@@ -1,6 +1,6 @@
-const getTotalBalanceByGender = (objInput, stringParameter) => {
-  return objInput
-    .filter((objItem) => objItem.gender === stringParameter)
+const getTotalBalanceByGender = (objInputs, genderValue) => {
+  return objInputs
+    .filter((objInput) => objInput.gender === genderValue)
     .reduce((sum, objInput) => {
       return sum + objInput.balance;
     }, 0);
