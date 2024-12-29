@@ -1,3 +1,10 @@
+const sortByDescendingFriendCount = (sortingObj) => {
+  return sortingObj.toSorted(
+    (firstSortingObj, secondSortingObj) =>
+      secondSortingObj.friends.length - firstSortingObj.friends.length
+  );
+};
+
 console.log("");
 console.log("----------Третє завдання----------");
 console.log(
