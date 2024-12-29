@@ -1,6 +1,13 @@
-const getTotalBalanceByGender = clients;
+const getTotalBalanceByGender = (objInput, stringParameter) => {
+  return objInput
+    .filter((objItem) => objItem.gender === stringParameter)
+    .reduce((sum, objInput) => {
+      return sum + objInput.balance;
+    }, 0);
+};
 console.log("");
 console.log("----------Четверте завдання----------");
+
 const clients = [
   {
     name: "Moore Hensley",
