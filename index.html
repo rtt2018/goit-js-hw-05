@@ -211,28 +211,29 @@
       </div>
       <div class="content">
         <p class="description">
-          На цій сторінці ви можете побачити результати роботи функцій, які
-          необхідно було оголосити за умовами домашнього завдання.
+          На цій сторінці у консолі ви можете побачити результати роботи
+          функцій, які необхідно було оголосити за умовами домашнього завдання.
         </p>
         <div class="task-wrapper">
           <ul class="task-list">
             <li class="task-item">
               <p class="task-header">Перше завдання:</p>
               <p class="task-description">
-                Напиши функцію
-                <code>isEnoughCapacity(products, containerSize)</code>, яка
-                обчислює, чи помістяться всі товари в контейнер при пакуванні.
-                Функція оголошує два параметри:<br />• products — об’єкт, у
-                якому ключі містять назви товарів, а їхні значення — кількість
-                цих товарів. Наприклад, <code>{ apples: 2, grapes: 4 }</code>.
-                <br />• containerSize — число, максимальна кількість одиниць
-                товарів, яку в себе може вмістити контейнер. <br />Функція має
-                повернути результат перевірки, чи помістяться всі товари в
-                контейнер. Тобто порахувати загальну кількість товарів в об’єкті
-                products і повернути true, якщо вона менше або дорівнює
-                containerSize, і false, якщо ні.
+                Напиши стрілочну функцію getUserNames(users), яка прийматиме
+                один параметр users — масив об’єктів користувачів. Функція має
+                повертати масив імен усіх користувачів (властивість name) із
+                масиву users.<br /><br />
+                На що буде звертати увагу ментор при перевірці: <br />•
+                Оголошена змінна getUserNames <br />• Змінній getUserNames
+                присвоєна стрілочна функція з параметром (users). <br />• Для
+                перебирання параметра users використовується метод map() <br />•
+                Виклик функції із зазначеним масивом користувачів повертає масив
+                ["Moore Hensley", "Sharlene Bush", "Ross Vazquez", "Elma Head",
+                "Carey Barr", "Blackburn Dotson", "Sheree Anthony"] <br />•
+                Виклик функції з випадковими, але валідними аргументами повертає
+                правильне значення
               </p>
-              <form class="tasc-form">
+              <!-- <form class="tasc-form">
                 <div class="field-container">
                   <label class="tasc-field-label">
                     Введіть об'єкт:
@@ -266,18 +267,37 @@
                     id="first-task-result-field"
                     class="first-task-res-field"
                 /></label>
-              </form>
+              </form> -->
             </li>
             <li class="task-item">
               <p class="task-header">Друге завдання:</p>
               <p class="task-description">
-                Напиши функцію calcAverageCalories(days), яка повертає
-                середньодобове значення кількості калорій, які спортсмен
-                споживав протягом тижня. Функція очікує один параметр: days —
-                масив об’єктів. Кожен об’єкт описує день тижня та кількість
-                калорій calories, спожитих спортсменом, у цей день.
+                Напиши стрілочну функцію getUsersWithFriend(users, friendName) ,
+                яка прийматиме два параметра: <br />• перший параметр users —
+                масив об’єктів користувачів <br />• другий параметр friendName —
+                ім’я друга для пошуку. <br />Функція має повертати масив усіх
+                користувачів із масиву users, у яких є друг з іменем friendName.
+                Друзі кожного користувача зберігаються у властивості friends.
+                Якщо користувачів, у яких є такий друг немає, то функція має
+                повернути порожній масив. <br />Поради:<br />• Метод filter()
+                можна використовувати для створення нового масиву з елементами,
+                які задовольняють певну умову. <br />• Використовуй метод
+                includes() для перевірки, чи масив friends містить friendName.
+                <br /><br />На що буде звертати увагу ментор при перевірці:
+                <br />• Оголошена змінна getUsersWithFriend <br />• Змінній
+                getUsersWithFriend присвоєна стрілочна функція з параметрами
+                (users, friendName) <br />• Для перебирання параметра users
+                використовується метод filter() <br />• Якщо значення параметра
+                friendName — це рядок "Briana Decker", функція повертає масив
+                об'єктів користувачів з іменами Sharlene Bush і Sheree Anthony
+                <br />• Якщо значення параметра friendName — це рядок "Goldie
+                Gentry", функція повертає масив об'єктів користувачів з іменами
+                Elma Head і Sheree Anthony <br />• Якщо значення параметра
+                friendName — це рядок "Adrian Cross", функція повертає порожній
+                масив <br />• Виклик функції з випадковими, але валідними
+                аргументами повертає правильне значення
               </p>
-              <form class="tasc-form">
+              <!-- <form class="tasc-form">
                 <div class="field-container">
                   <label class="tasc-field-label"
                     >Введіть масив об'єктів:
@@ -305,27 +325,27 @@
                     id="second-task-result-field"
                     class="first-task-res-field width-large"
                 /></label>
-              </form>
+              </form> -->
             </li>
             <li class="task-item">
               <p class="task-header">Третє завдання:</p>
               <p class="task-description">
-                Об’єкт profile описує профіль користувача на ігровій платформі.
-                У його властивостях зберігається ім’я профілю username та
-                кількість активних годин playTime, проведених у грі. const
-                profile = { username: "Jacob", playTime: 300, };
-                <br /><br />Доповни об’єкт profile методами для роботи з його
-                властивостями. <br />• Метод changeUsername(newName) повинен
-                приймати рядок (нове ім’я) в параметр newName та змінювати
-                значення властивості username на нове. Нічого не повертає.
-                <br />• Метод updatePlayTime(hours) повинен приймати число
-                (кількість годин) у параметр hours та збільшити на нього
-                значення властивості playTime. Нічого не повертає. <br />• Метод
-                getInfo() має повертати рядок формату Username has amount active
-                hours!, де Username — це ім’я профілю, а amount — кількість
-                ігрових годин.
+                Напиши стрілочну функцію sortByDescendingFriendCount(users) ,
+                яка прийматиме один параметр users — масив об’єктів
+                користувачів. <br />Функція має повертати масив усіх
+                користувачів, відсортованих за спаданням кількостій їх друзів
+                (властивість friends). <br /><br />На що буде звертати увагу
+                ментор при перевірці: <br />• Оголошена змінна
+                sortByDescendingFriendCount <br />• Змінній
+                sortByDescendingFriendCount присвоєна стрілочна функція з
+                параметром (users) <br />• Для перебирання параметра users
+                використаний метод toSorted() <br />• Виклик функції із
+                зазначеним масивом users повертає новий масив користувачів,
+                відсортований за спаданням кількості їхніх друзів <br />• Виклик
+                функції з випадковими, але валідними аргументами повертає
+                правильне значення
               </p>
-              <form class="tasc-form">
+              <!-- <form class="tasc-form">
                 <p class="task-description" style="font-weight: 700">
                   Виберіть метод, введіть потрібне значення і натисніть кнопку
                   "Дивитись результат:"
@@ -382,7 +402,84 @@
                     id="third-task-result-field"
                     class="first-task-res-field"
                 /></label>
-              </form>
+              </form> -->
+            </li>
+            <li class="task-item">
+              <p class="task-header">Четверте завдання:</p>
+              <p class="task-description">
+                Напиши стрілочну функцію sortByDescendingFriendCount(users) ,
+                яка прийматиме один параметр users — масив об’єктів
+                користувачів. <br />Функція має повертати масив усіх
+                користувачів, відсортованих за спаданням кількостій їх друзів
+                (властивість friends). <br /><br />
+                На що буде звертати увагу ментор при перевірці: <br />•
+                Оголошена змінна sortByDescendingFriendCount <br />• Змінній
+                sortByDescendingFriendCount присвоєна стрілочна функція з
+                параметром (users) <br />• Для перебирання параметра users
+                використаний метод toSorted() <br />• Виклик функції із
+                зазначеним масивом users повертає новий масив користувачів,
+                відсортований за спаданням кількості їхніх друзів <br />• Виклик
+                функції з випадковими, але валідними аргументами повертає
+                правильне значення
+              </p>
+              <!-- <form class="tasc-form">
+                <p class="task-description" style="font-weight: 700">
+                  Виберіть метод, введіть потрібне значення і натисніть кнопку
+                  "Дивитись результат:"
+                </p>
+                <div class="field-container field-radio-column">
+                  <label class="tasc-radio-label">
+                    <input
+                      class="second-task-arg-radio"
+                      type="radio"
+                      name="third-tasc-method"
+                      id="third-tasc-name"
+                      value="1"
+                    />changeUsername(newName): newName =
+                    <input
+                      type="text"
+                      class="first-task-arg-radio"
+                      id="third-tasc-name-value"
+                    />
+                  </label>
+                  <label class="tasc-radio-label">
+                    <input
+                      class="second-task-arg-radio"
+                      type="radio"
+                      name="third-tasc-method"
+                      id="third-tasc-radio-time"
+                      value="2" />updatePlayTime(hours): hours =
+                    <input
+                      type="number"
+                      class="first-task-arg-radio"
+                      id="third-radio-time-value"
+                  /></label>
+                  <label class="tasc-radio-label">
+                    <input
+                      class="second-task-arg-radio"
+                      type="radio"
+                      name="third-tasc-method"
+                      id="third-tasc-info"
+                      value="3"
+                    />getInfo():</label
+                  >
+                </div>
+                <button
+                  type="button"
+                  id="third-task-res-button"
+                  class="get-first-task-result"
+                >
+                  &gt;&gt; Дивитись результат: &lt;&lt;
+                </button>
+                <label class="tasc-field-label"
+                  >Результат виконання функції:
+                  <input
+                    type="text"
+                    name="third-task-result-field"
+                    id="third-task-result-field"
+                    class="first-task-res-field"
+                /></label>
+              </form> -->
             </li>
           </ul>
         </div>
@@ -392,6 +489,6 @@
     <script src="./js/task-2.js"></script>
     <script src="./js/task-3.js"></script>
     <script src="./js/task-4.js"></script>
-    <script src="./js/script.js"></script>
+    <!-- <script src="./js/script.js"></script> -->
   </body>
 </html>
